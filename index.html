@@ -15,23 +15,29 @@
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
     </style>
+    <!-- configuración de emailjs -->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+    <script type="text/javascript">
+        emailjs.init('Aavhtvxteebb8hAyK')
+    </script>
 </head>
 
-<body class="scroll-smooth bg-gradient-to-b from-neutral-900 to-neutral-700 font-sans">
+<body class="scroll-smooth bg-gradient-to-b from-neutral-800 to-neutral-700 font-sans">
     <!-- con dark: se carga o se cumpla cuando el navegador este en modo oscuro -->
     <header>
         <nav id="menu"
-        class="w-full flex justify-center space-x-4 text-white font-bold py-3 gap-4 fixed top-0 z-50 bg-black flex-wrap">
+            class="w-full flex justify-center space-x-4 text-white font-bold py-3 gap-4 fixed top-0 z-50 bg-neutral-900 flex-wrap">
             <a href="#home" class="hover:text-pink-500">Inicio</a>
             <a href="#experience" class="hover:text-pink-500">Experiencia</a>
             <a href="#projects" class="hover:text-pink-500">Proyectos</a>
             <a href="#education" class="hover:text-pink-500">Formación</a>
             <a href="#about" class="hover:text-pink-500">Sobre Mí</a>
+            <a href="#contactame" class="hover:text-pink-500">Contacto</a>
         </nav>
     </header>
     <main class="px-8">
         <section id="home" class="container mx-auto py-24 md:py-32 md:max-w-2xl lg:max-w-4xl">
-            <div class="w-full">
+            <div class="w-full ">
                 <div class="flex flex-col md:flex-row gap-5">
                     <div class="w-full md:w-1/4 flex flex-col justify-around items-center gap-4 mb-4  ">
                         <img class="rounded-full shadow-lg size-45" src="images/GGindelli.jpg" alt="Gisela Gindelli">
@@ -45,8 +51,7 @@
                             Tester QA en formación.
                         </p>
                         <nav class="flex flex-wrap gap-4 mt-8">
-                            <a href="mailto:gindelligisela@gmail.com" target="_blank" rel="noopener noreferrer"
-                                role="link"
+                            <a href="#contactame" rel="noopener noreferrer" role="link"
                                 class="flex items-center justify-center gap-2 px-4 py-1 border border-white rounded-full  text-white text-md hover:bg-neutral-100 hover:border-neutral-300 hover:text-black group max-w-fit ">
                                 <svg class="size-4" xmlns="http://www.w3.org/2000/svg" width="24" height="24"
                                     viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none"
@@ -160,8 +165,7 @@
                         </a>
                     </li>
                     <li class="mb-10 ms-4">
-                        <div
-                        class="absolute w-3 h-3 bg-neutral-200 rounded-full mt-1.5 -start-1.5 border border-white">
+                        <div class="absolute w-3 h-3 bg-neutral-200 rounded-full mt-1.5 -start-1.5 border border-white">
                         </div>
                         <time class="mb-1 text-sm font-normal leading-none text-neutral-400">Linde | octubre 2002 - mayo
                             2010</time>
@@ -202,7 +206,7 @@
                 <h3 class="text-3xl font-bold text-left mb-8 text-white">Mis Proyectos</h3>
                 <div class="container mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-6">
 
-                    <div class="block rounded-lg shadow-secondary-1 bg-black">
+                    <div class="block shadow-secondary-3 bg-neutral-800 rounded-lg shadow-lg">
                         <div class="relative overflow-hidden bg-cover bg-no-repeat">
                             <img class="rounded-t-lg object-cover object-center w-full h-56 "
                                 src="images/vuelta_cole_mateito.png" alt="Vuelta Al Cole Mateito" />
@@ -221,8 +225,8 @@
                                 usabilidad.
                             </p>
                             <div class="flex gap-4 flex-wrap w-auto">
-                                <a href="https://vueltaalcolemateito.netlify.app/index.html" target="_blank" rel="noopener noreferrer"
-                                    role="link"
+                                <a href="https://vueltaalcolemateito.netlify.app/index.html" target="_blank"
+                                    rel="noopener noreferrer" role="link"
                                     class="flex items-center justify-center gap-2 px-4 py-1 border border-white rounded-full text-white text-md hover:bg-neutral-100 hover:border-neutral-300 hover:text-black group max-w-fit ">
                                     <svg class="size-4" xmlns="http://www.w3.org/2000/svg" width="24" height="24"
                                         viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
@@ -233,7 +237,7 @@
                                         <path
                                             d="M13 18l-.397 .534a5.068 5.068 0 0 1 -7.127 0a4.972 4.972 0 0 1 0 -7.071l.524 -.463" />
                                     </svg>
-                                    Vista previa
+                                    Ir al Sitio
                                 </a>
                                 <a href="https://github.com/gisegind/VueltaAlColeMateito" target="_blank" role="link"
                                     rel="noopener noreferrer" role="link"
@@ -252,7 +256,7 @@
                         </div>
                     </div>
 
-                    <div class="block rounded-lg shadow-secondary-1 bg-black">
+                    <div class="block  shadow-secondary-3 bg-neutral-800 rounded-lg shadow-lg">
                         <div class="relative overflow-hidden bg-cover bg-no-repeat">
                             <img class="rounded-t-lg object-cover object-center w-full h-56 "
                                 src="images/bibliobundle.png" alt="BiblioBundle" />
@@ -283,7 +287,7 @@
                                         <path
                                             d="M13 18l-.397 .534a5.068 5.068 0 0 1 -7.127 0a4.972 4.972 0 0 1 0 -7.071l.524 -.463" />
                                     </svg>
-                                    Vista previa
+                                    Ir al Sitio
                                 </a>
                                 <a href="https://github.com/gisegind/BiblioBundle" target="_blank" role="link"
                                     rel="noopener noreferrer" role="link"
@@ -301,7 +305,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="block rounded-lg shadow-secondary-1 bg-black">
+                    <div class="block  shadow-secondary-3 bg-neutral-800 rounded-lg shadow-lg">
                         <div class="relative overflow-hidden bg-cover bg-no-repeat">
                             <img class="rounded-t-lg object-cover object-center w-full h-56 "
                                 src="images/aparthotel.png" alt="Apart Hotel Snow" />
@@ -335,7 +339,7 @@
                                         <path
                                             d="M13 18l-.397 .534a5.068 5.068 0 0 1 -7.127 0a4.972 4.972 0 0 1 0 -7.071l.524 -.463" />
                                     </svg>
-                                    Vista previa
+                                    Ir al Sitio
                                 </a>
                                 <a href="https://github.com/gisegind/ApartHotel" target="_blank" role="link"
                                     rel="noopener noreferrer" role="link"
@@ -430,7 +434,7 @@
                 <h3 class="container  mt-16  text-2xl font-bold text-left text-white mb-8">Inglés</h3>
                 <p class="mb-4 text-base font-normal text-neutral-100">
                     Nivel <strong class="text-pink-500">Avanzado.</strong>
-                  </p>
+                </p>
             </section>
 
             <section id="about" data-aos="fade-down-right" class="py-20 mx-auto container lg:max-w-4xl md:max-w-2xl ">
@@ -458,13 +462,60 @@
                         class="w-52 order-1 object-cover  p-1 md:order-2 rotate-6 lg:p-2 lg:w-64  rounded-full bg-neutral-500 ring-white/10 ">
                 </article>
             </section>
-    </main>
 
+
+            <section id="contactame"
+                class="container mx-auto px-6 py-12 scroll-mt-32 bg-neutral-700 rounded-lg shadow-lg max-w-4xl">
+                <h2 class="text-2xl font-bold text-white mb-6 text-center">Contactame</h2>
+                <form id="contactForm" class="space-y-6 ">
+                    <!-- Nombre -->
+                    <div>
+                        <label for="name" class="block text-sm font-medium text-neutral-100">Nombre</label>
+                        <input type="text" id="name" name="name" placeholder="Tu nombre" required
+                            class="w-full p-3 mt-2 rounded-lg bg-white text-neutral-800 border border-neutral-700">
+                    </div>
+                    <!-- Email -->
+                    <div>
+                        <label for="email" class="block text-sm font-medium text-neutral-100">Email</label>
+                        <input type="email" id="email" name="email" placeholder="Tu email" required
+                            class="w-full p-3 mt-2 rounded-lg bg-white text-neutral-800 border border-neutral-700">
+                    </div>
+                                      
+                    <!-- Mensaje -->
+                    <div>
+                        <label for="message" class="block text-sm font-medium text-neutral-100">Mensaje</label>
+                        <textarea id="message" name="message" rows="4" placeholder="Escribe tu mensaje" required
+                            class="w-full p-2 mt-2 rounded-lg bg-white text-neutral-800 border border-neutral-700"></textarea>
+                    </div>
+                    <!-- Botón Enviar -->
+                    <div class="text-center">
+                        <button id="button" type="submit"
+                            class="gap-2 px-6 py-1 border border-white rounded-full text-white text-md hover:bg-neutral-100 hover:border-neutral-300 hover:text-black group max-w-fit ">
+                            Enviar
+                        </button>
+                    </div>
+                </form>
+            </section>
+            
+
+    </main>
     <footer class="pl-8 md:pl-0 mt-16 mx-auto container lg:max-w-4xl md:max-w-2xl mb-10 flex justify-center">
         <div class="rounded-lg w-full max-w-screen-xl mx-auto md:flex md:items-center md:justify-between py-4"> <span
                 class="text-sm sm:text-center text-white">© 2024 Gisela Gindelli
             </span>
             <ul class="flex flex-wrap items-center mt-3 text-sm font-medium text-white sm:mt-0">
+                <li class="mr-6">
+                    <a href="https://wa.me/5491168030215" target="_blank" class="text-white hover:text-pink-500">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-whatsapp"
+                            width="24" height="24" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
+                            fill="none" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M3 21l1.65 -3.8a9 9 0 1 1 3.4 2.9l-5.05 .9"></path>
+                            <path
+                                d="M9 10a.5 .5 0 0 0 1 0v-1a.5 .5 0 0 0 -1 0v1a5 5 0 0 0 5 5h1a.5 .5 0 0 0 0 -1h-1a.5 .5 0 0 0 0 1">
+                            </path>
+                        </svg>
+                    </a>
+                </li>
                 <li class="mr-6">
                     <a href="https://github.com/gisegind" target="_blank" class="text-white hover:text-pink-500">
                         <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-github"
@@ -491,17 +542,18 @@
                         </svg>
                     </a>
                 </li>
-                <li class="mr-4"> <a href="/#about" class="hover:text-pink-500 me-4 md:me-6">Sobre mí</a> </li>
                 <li class="mr-4"> <a id="contacto" href="mailto:gindelligisela@gmail.com"
                         class="hover:text-pink-500">Contacto</a> </li>
             </ul>
         </div>
+
     </footer>
 
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
         AOS.init();
     </script>
+    <script src="js/email.js"></script>
 </body>
 
 </html>
